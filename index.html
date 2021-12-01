@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Checkpoint II FrontEnd</title>
+	<link href="./css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="background-image: url('img/MachadoMG.jpeg')">
+	<header>
+		<h1>Bem-Vindo a Machado</h1>
+	</header>
+	<main>
+		<iframe width="320" height="180" src="https://www.youtube.com/embed/kNK1Fud5iDw" title="YouTube video player" frameborder="0"
+		 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<div class="formulario">
+			<h3>Preencha seus dados e receba mais informações</h3>
+			<form action="./cadastro" method="POST">
+				<fieldset>
+					<div class="campo">
+						<label for="nome" class="estiloB">Nome:</label>
+    <input type="text" name="nome" maxlength="100" placeholder="Nome" required id="nome" </div><div>
+    <label for="sobrenome" class="estiloB">Sobrenome:</label>
+    <input type="text" name="sobrenome" maxlength="100" placeholder="Sobrenome" required id="sobrenome"> 
+    </div>
+    </fieldset>
+    <div class="campo">
+    <label for="email" class="estiloB">E-mail:</label>
+    <input type="email" name="email" id="eamil" placeholder="email@example.com" required>
+    </div>
+    <div class="campo">
+    <label for="telefone" class="estiloB" id="telefone" >Telefone com DDD:</label> 
+    <input type="text" name="telefone"  placeholder="(00) 00000-0000" required>
+    </div>
+    <div class="campo">
+    <label for="nascimento" class="estiloB">Data de nascimento:</label>
+    <input id="bday" type="date" max="2021-12-01" required>
+    </div>
+    <div class="campo">
+    <label for="idade" class="estiloB">Maior de 18 anos?</label>
+    <div>
+    <input type="radio" name="idade" id="yes" class="radio">
+    <label for="sim" class="radio-label">Sim</label>
+    <input type="radio" name="idade" id="no" class="radio">
+    <label for="nao" class="radio-label">Não</label>
+    </div>
+    </div>
+    <div class="campo">
+    <label for="pontos-interesse" class="estiloB">Selecione um ponto turístico de interesse: </label>
+    <select name="interesses" id="pontos-interesse">
+    <option value="0" selected disabled>Selecione</option>
+    <option value=“criscto>Cristo Redentor</option>
+    <option value=“lagoa”>Lagoa Artificial</option>
+    <option value=“plantacoes”>Plantações de Café</option>
+    <option value=“plantacoes”>Comidas Típicas no Centro</option>
+    </select>
+    </div>
+    <div>
+    <label for="motivos" class="estiloB" <label>Motivos de interesse:</label>
+    <div>
+    <input type="checkbox" name="motivo” id="motivoT" value="Turista" class="check-label">Turista</label>
+    <input type="checkbox" name="motivo” id="motivoR" value="Residente" class="check-label">Residente</label>
+    <input type="checkbox" name="motivo” id="motivoE" value="Estudante" class="check-label">Estudante</label>
+    </div>
+    <div class="buttons">
+    <button type="reset" id="reset">Resetar</button>
+    <button type="submit" id="submit">Enviar</buttov>
+    </div>
+    </form>
+    </main>
+    <footer id="rodape">
+    <a href="https://www.instagram.com/prefeiturademachado/" target="_blank"> <img src="img/instagramIcon.jpeg" alt="instagram icon"></a>
+    <a href="https://www.youtube.com/channel/UCZTL9GQHksZmIE5VGIP_KjQ" target="_blank"> <img src="img/youtubeIcon.jpeg" alt="youtube icon"> </a>
+    </footer>
+
+  </body>
+</html>
